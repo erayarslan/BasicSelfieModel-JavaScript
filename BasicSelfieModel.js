@@ -1,7 +1,7 @@
 /**
  * @module BasicSelfieModel
  * author eray arslan
- * inspired by @ahmetozantekin/BasicSelfieModel
+ * inspired by @ahmetozantekin BasicSelfieModel
  * src https://github.com/ahmetozantekin/BasicSelfieModel
  */
 
