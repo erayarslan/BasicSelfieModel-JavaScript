@@ -33,12 +33,12 @@ Selfie.prototype.takePhoto = function (showBoobs) {
   this.showBoobs = showBoobs;
 
   if (showBoobs) {
-    this.areYouFamous = true;
+    this.setAreYouFamous(true);
   }
 
-  if (this.gender === "male" && this.areYouFamous === false) {
+  if (this.gender === "male" && !this.areYouFamous) {
     this.like = 7;
-  } else if (this.gender === "male" && this.areYouFamous === true) {
+  } else if (this.gender === "male" && this.areYouFamous) {
     this.like = 300 - barzoCount;
   } else if (this.gender == "female") {
     if (!this.areYouFamous) {
