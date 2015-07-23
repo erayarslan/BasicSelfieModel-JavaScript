@@ -1,4 +1,4 @@
-# BasicSelfieModel
+# BasicSelfieModel-JavaScript
 
 @ahmetozantekin BasicSelfieModel inspired JavaScript thing
 
