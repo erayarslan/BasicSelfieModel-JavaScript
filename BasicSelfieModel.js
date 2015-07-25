@@ -5,9 +5,9 @@
  * src https://github.com/ahmetozantekin/BasicSelfieModel
  */
 
-var barzoCount = 50;
-
 var Instagram = function (gender) {
+  this.barzoCount = 50;
+  
   this.gender = gender;
   this.areYouFamous = false;
   this.like = 0;
@@ -39,7 +39,7 @@ Selfie.prototype.takePhoto = function (showBoobs) {
   if (this.gender === "male" && !this.areYouFamous) {
     this.like = 7;
   } else if (this.gender === "male" && this.areYouFamous) {
-    this.like = 300 - barzoCount;
+    this.like = 300 - this.barzoCount;
   } else if (this.gender == "female") {
     if (!this.areYouFamous) {
       this.like = 20; // bff mode #on
@@ -47,9 +47,9 @@ Selfie.prototype.takePhoto = function (showBoobs) {
       this.like = 700;
     }
 
-    while (this.showBoobs && barzoCount < 150) {
-      this.like += barzoCount;
-      barzoCount++;
+    while (this.showBoobs && this.barzoCount < 150) {
+      this.like += this.barzoCount;
+      this.barzoCount++;
     }
   } else {
     throw new Error("Go away fuckin faggot.");
